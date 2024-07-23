@@ -10,7 +10,7 @@ config();
 //middlewares
 app.use(express.json());
 
-app.use("/", appRouter)
+app.use("/api", appRouter)
 
 const PORT = 5000 || 4000;
 
