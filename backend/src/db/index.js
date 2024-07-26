@@ -2,11 +2,11 @@ import { createPool } from "mysql2/promise";
 
 // Database connection
 const pool = createPool({
-  port: process.env.MYSQL_PORT,
-  password: process.env.MYSQL_PASSWORD,
-  host: process.env.MYSQL_HOST,
-  database: process.env.MYSQL_DATABASE_NAME,
-  user: process.env.MYSQL_USER,
+  port: 3306,
+  password: "admin#123",
+  host: "localhost",
+  database: "test",
+  user: "root",
 });
 
 const connectToDatabase = async () => {

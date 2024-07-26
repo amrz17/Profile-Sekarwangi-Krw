@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { navbarLink } from "../const";
 
 const DropDownMenu = () => {
     return (
@@ -22,12 +21,30 @@ const DropDownMenu = () => {
         <ul tabIndex={0} className="dropdown-content menu bg-base-100 
         z-[1] p-2 shadow w-full mt-12">
             <li>
-                {navbarLink.map((link, index) => (
-                    <Link key={index} to={link.to}
-                    className="link link-hover">
-                        {link.label}
-                    </Link>
-                ))}
+                <div className="flex-none">
+                    <ul className="menu menu-horizontal px-1">
+                        <li><Link to="/">Home</Link></li>
+                        <li>
+                        <details>
+                            <summary>Profil</summary>
+                            <ul className="bg-base-100 rounded-t-none p-2">
+                            <li><Link to="/profil/wilayah-desa">Wilayah Desa</Link></li>
+                            <li><Link to="/profil/sejarah-desa">Sejarah Desa</Link></li>
+                            </ul>
+                        </details>
+                        </li>
+                        <li><Link to="/berita-desa">Berita</Link></li>
+                        <li>
+                        <details>
+                            <summary>Data</summary>
+                            <ul className="bg-base-100 rounded-t-none p-2">
+                            <li><Link to="/data/data-penduduk">Data Penduduk</Link></li>
+                            <li><Link to="/data/data-agama">Data Agama</Link></li>
+                            </ul>
+                        </details>
+                        </li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>

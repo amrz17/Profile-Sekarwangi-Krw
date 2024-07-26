@@ -1,6 +1,5 @@
 import { logoKarawang  } from "../assets/images";
 import { Link } from "react-router-dom";
-import { navbarLink } from "../const";
 import DropDownMenu from "./DropDownMenu";
 
 const Navbar = () => {
@@ -28,12 +27,30 @@ const Navbar = () => {
         <div className="navbar bg-green-600 xl:flex-col justify-center 
         gap-4 hidden md:flex">
             <div className="gap-10 text-white">
-            {navbarLink.map((link, index) => (
-                <Link key={index} to={link.to}
-                className="link link-hover">
-                    {link.label}
-                </Link>
-            ))}
+                <div className="flex-none">
+                    <ul className="menu menu-horizontal px-1">
+                        <li><Link to="/">Home</Link></li>
+                        <li>
+                        <details>
+                            <summary>Profil</summary>
+                            <ul className="bg-base-100 rounded-t-none p-2 text-black">
+                            <li><Link to="/profil/wilayah-desa">Wilayah Desa</Link></li>
+                            <li><Link to="/profil/sejarah-desa">Sejarah Desa</Link></li>
+                            </ul>
+                        </details>
+                        </li>
+                        <li><Link to="/berita-desa">Berita</Link></li>
+                        <li>
+                        <details>
+                            <summary>Data</summary>
+                            <ul className="bg-base-100 rounded-t-none p-2 text-black">
+                            <li><Link to="/data/data-penduduk">Data Penduduk</Link></li>
+                            <li><Link to="/data/data-agama">Data Agama</Link></li>
+                            </ul>
+                        </details>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div className="md:hidden w-full">
