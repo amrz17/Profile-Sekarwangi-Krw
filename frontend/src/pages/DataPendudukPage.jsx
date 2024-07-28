@@ -1,10 +1,10 @@
-import DataDesa from "../components/DataDesa";
+import DataPenduduk from "../components/DataPenduduk";
 import MainLayout from "../layout/MainLayout";
 
 export default function DataPage() {
     return (
         <MainLayout>
-            <DataDesa />
+            <DataPenduduk />
         </MainLayout>
     )
 }

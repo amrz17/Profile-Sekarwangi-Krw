@@ -33,7 +33,7 @@ const Navbar = () => {
                         <li>
                         <details>
                             <summary>Profil</summary>
-                            <ul className="bg-base-100 rounded-t-none p-2 text-black">
+                            <ul className="bg-base-100 w-[135px] rounded-t-none p-2 text-black">
                             <li><Link to="/profil/wilayah-desa">Wilayah Desa</Link></li>
                             <li><Link to="/profil/sejarah-desa">Sejarah Desa</Link></li>
                             </ul>
@@ -43,9 +43,13 @@ const Navbar = () => {
                         <li>
                         <details>
                             <summary>Data</summary>
-                            <ul className="bg-base-100 rounded-t-none p-2 text-black">
+                            <ul className="bg-base-100 w-[175px] rounded-t-none p-2 text-black">
                             <li><Link to="/data/data-penduduk">Data Penduduk</Link></li>
                             <li><Link to="/data/data-agama">Data Agama</Link></li>
+                            <li><Link to="/data/data-gender">Data Jenis Kelamin</Link></li>
+                            <li><Link to="/data/data-umur">Data Rentang Umur</Link></li>
+                            <li><Link to="/data/data-pendidikan">Data Pendidikan</Link></li>
+                            <li><Link to="/data/data-pekerjaan">Data Pekerjaan</Link></li>
                             </ul>
                         </details>
                         </li>

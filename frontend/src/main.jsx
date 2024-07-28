@@ -6,22 +6,20 @@ import HomePage from './pages/HomePage.jsx'
 import BeritaPage from './pages/BeritaPage.jsx'
 import ProfilPage from './pages/ProfilPage.jsx'
 import SejarahPage from './pages/SejarahPage.jsx'
-import DataPage from './pages/DataPage.jsx'
 import IsiBerita from './components/IsiBerita.jsx'
+import DataPendudukPage from './pages/DataPendudukPage.jsx'
+import DataPendidikanPage from './pages/DataPendidikanPage.jsx'
+import DataAgamaPage from './pages/DataAgamaPage.jsx'
+import DataGenderPage from './pages/DataGenderPage.jsx'
+import DataUmurPage from './pages/DataUmurPage.jsx'
+import DataPekerjaanPage from './pages/DataPekerjaanPage.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />
   },
-  {
-    path: "/berita-desa",
-    element: <BeritaPage />
-  },
-  {
-    path: "/berita-desa/1",
-    element: <IsiBerita />
-  },
+  // Profil Desa
   {
     path: "/profil/wilayah-desa",
     element: <ProfilPage />
@@ -30,9 +28,39 @@ const router = createBrowserRouter([
     path: "/profil/sejarah-desa",
     element: <SejarahPage />
   },
+  // Berita Desa
   {
-    path: "/data-desa",
-    element: <DataPage />
+    path: "/berita-desa",
+    element: <BeritaPage />
+  },
+  {
+    path: "/berita-desa/1",
+    element: <IsiBerita />
+  },
+  // Data Desa
+  {
+    path: "/data/data-penduduk",
+    element: <DataPendudukPage />
+  },
+  {
+    path: "/data/data-agama",
+    element: <DataAgamaPage />
+  },
+  {
+    path: "/data/data-gender",
+    element: <DataGenderPage />
+  },
+  {
+    path: "/data/data-umur",
+    element: <DataUmurPage />
+  },
+  {
+    path: "/data/data-pendidikan",
+    element: <DataPendidikanPage />
+  },
+  {
+    path: "/data/data-pekerjaan",
+    element: <DataPekerjaanPage />
   }
 ]);
 

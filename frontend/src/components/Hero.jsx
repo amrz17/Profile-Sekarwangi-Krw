@@ -2,9 +2,7 @@
 const Hero = () => {
     return (
         <>
-            <div className="carousel w-full">
                 <div
-                id="slide1"
                 className="hero min-h-screen carousel-item relative w-full"
                 style={{
                     backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
@@ -17,7 +15,6 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </>
 
     );

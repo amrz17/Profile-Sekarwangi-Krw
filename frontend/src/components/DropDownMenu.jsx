@@ -18,7 +18,7 @@ const DropDownMenu = () => {
             </svg>
          </button>
         </div>
-        <ul tabIndex={0} className="dropdown-content menu bg-base-100 
+        <ul tabIndex={0} className="dropdown-content menu bg-base-100
         z-[1] p-2 shadow w-full mt-12">
             <li>
                 <div className="flex-none">
@@ -27,7 +27,7 @@ const DropDownMenu = () => {
                         <li>
                         <details>
                             <summary>Profil</summary>
-                            <ul className="bg-base-100 rounded-t-none p-2">
+                            <ul className="bg-base-100 w-[135px] -right-5 rounded-t-none p-2">
                             <li><Link to="/profil/wilayah-desa">Wilayah Desa</Link></li>
                             <li><Link to="/profil/sejarah-desa">Sejarah Desa</Link></li>
                             </ul>
@@ -37,9 +37,13 @@ const DropDownMenu = () => {
                         <li>
                         <details>
                             <summary>Data</summary>
-                            <ul className="bg-base-100 rounded-t-none p-2">
+                            <ul className="bg-base-100 w-[170px] -left-12 rounded-t-none p-2">
                             <li><Link to="/data/data-penduduk">Data Penduduk</Link></li>
                             <li><Link to="/data/data-agama">Data Agama</Link></li>
+                            <li><Link to="/data/data-gender">Data Jenis Kelamin</Link></li>
+                            <li><Link to="/data/data-umur">Data Rentang Umur</Link></li>
+                            <li><Link to="/data/data-pendidikan">Data Pendidikan</Link></li>
+                            <li><Link to="/data/data-pekerjaan">Data Pekerjaan</Link></li>
                             </ul>
                         </details>
                         </li>
