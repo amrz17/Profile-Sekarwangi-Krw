@@ -36,10 +36,11 @@ const Navbar = () => {
                             <ul className="bg-base-100 w-[135px] rounded-t-none p-2 text-black">
                             <li><Link to="/profil/wilayah-desa">Wilayah Desa</Link></li>
                             <li><Link to="/profil/sejarah-desa">Sejarah Desa</Link></li>
+                            <li><Link to="/profil/visidanmisi-desa">Visi & Misi</Link></li>
                             </ul>
                         </details>
                         </li>
-                        <li><Link to="/berita-desa">Berita</Link></li>
+                        <li><Link to="/">Lembaga</Link></li>
                         <li>
                         <details>
                             <summary>Data</summary>

@@ -13,6 +13,7 @@ import DataAgamaPage from './pages/DataAgamaPage.jsx'
 import DataGenderPage from './pages/DataGenderPage.jsx'
 import DataUmurPage from './pages/DataUmurPage.jsx'
 import DataPekerjaanPage from './pages/DataPekerjaanPage.jsx'
+import VisiDanMisiPage from './pages/VisiDanMisiPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/profil/sejarah-desa",
     element: <SejarahPage />
+  },
+  {
+    path: "/profil/visidanmisi-desa",
+    element: <VisiDanMisiPage />
   },
   // Berita Desa
   {

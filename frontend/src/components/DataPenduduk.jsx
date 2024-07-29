@@ -8,7 +8,7 @@ const DataPenduduk = () => {
                     Data Penduduk
                 </h1>
             </div>
-            <div className="overflow-x-auto w-[350px]">
+            <div className="overflow-x-auto w-[365px] md:w-[580px] xl:w-[850px]">
                 <table className="table">
                     {/* head */}
                     <thead>

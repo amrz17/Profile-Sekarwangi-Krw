@@ -3,7 +3,7 @@ import { sekarwangiMap } from "../assets/images";
 const SejarahDesa = () => {
     return (
         <main className="flex min-h-screen justify-center w-full pt-56 p-3">
-            <section className="flex flex-col md:w-[55%] gap-3">
+            <section className="flex flex-col md:w-[70%] xl:w-[55%] gap-3">
                 <div className="w-full">
                     <h1 className="text-3xl">
                         Sejarah Desa
@@ -22,68 +22,132 @@ const SejarahDesa = () => {
                         />
                     </div>
                     <p className="text-justify">
-                        Desa sekarwangi adalah sebuah Desa hasil pemecahan atau pemekaran dari
-                        Desa Cingcin dengan mendapat tambahan sebahagian wilayah dari Desa Parungserab.
-                        Adapun proses berdirinya dapat kita kenang sebagaimana tertera dibawah 
-                        ini ;
+                        Desa Sekarwangi adalah salah satu Desa dari 13 Desa yang ada di Kecamatan Rawamerta 
+                        Kabupaten Karawang. Desa ini merupakan Desa Pemekaran dari Desa Induk yaitu Desa 
+                        Rawagede, yang sekarang menjadi Desa Balongsari. Pada tahun 1976 Desa Induk Rawagede
+                        dimekarkan menjadi Dua Desa yaitu Desa Rawagede dan Desa Mekarjaya dan selanjutnya 
+                        Desa Rawagede pun diganti menjadi Desa Balongsari. Pada Tahun 1978 Desa Balongsari 
+                        kembali dimekarkan lagi menjadi dua Desa yaitu Desa Balongsari dan Desa Sekarwangi, 
+                        disinilah mulai terbentuk Desa Sekarwangi. 
                         <br />
                         <br />
-                        Pada tanggal 6 Maret 1984 terjadi rapat pembentukan Panitia XI yang dipimpin
-                        oleh Bapak Camat Katapang E. SUHANDA.Pada rapat ini telah diputuskan personil 
-                        Panitia XI yang terdiri dari tokoh Masyarakat yang berasal dari tiga Desa, yaitu
-                        Desa Cingcin, Desa Parungserab dan Desa Gandasoli waktu itu.Panitia XI bertugas 
-                        memusawarahkan dan mengadakan pembagian Wilayah serta kekayaan Desa yang asalnya 
-                        dari tiga Desa menjadi 5 Desa.Pada tanggal 8 Maret 1984 diadakan rapat pengesahan 
-                        panitia XI, Dalam rapat kerjanya Panitia XI telah memutuskan tentang batas wilayah, 
-                        pembagian kekayaan desa, dan memutuskan nama Desa yang akan diajukan kepada atasan.
-                        Pada waktu rapat pembagian wilayah sedikit mendapat kesulitan karena harus memecah 
-                        kampong Lebakwangi, yang menurut nama alamnya serta kekeluargaanya sudah menyatu dan 
-                        ada dalam keluarga Besar Lebakwangi.Dan akhirnya rapat tidak dapat mengabulkan usul 
-                        beberapa tokoh masyarakat yang menginginkan agar kampung Lebakwangi tetap bersatu, 
-                        tidak pecah jadi dua wilayah. Hal ini terpaksa karena dalam ketentuan batas Desa itu 
-                        harus batas alam, yang tepatnya untuk dikita batas alam itu adalah Jalan Raya Propinsi.
+                        Mengapa Desa Pemekaran dinamakan Desa Sekarwang ? Menurut Tokoh Masyarakat disini yang
+                        kebetulan sekarang menjadi Kepala Desa Sekarwangi, Ia menceritakan : Sekar artinya Kembang/Bunga
+                        Wangi artinya Harum. Jadi Sekarwangi adalah sebuah Desa yang berkembang diumpamakan 
+                        seperti bunga / Kembang yang sedang Mekar sehingga mengeluarkan wangi yang sedap arti 
+                        lain yaitu Desa yang selalu ingin membangun baik Fisik maupun sumberdaya manusianya sehingga 
+                        bisa mengharumkan nama Desa Sekarwangi itu sendiri.
+                        Jadi tahun 1978 merupakan Tahun Kelahiran/Berdirinya Desa Sekarwangi sekarang.
                         <br />
                         <br />
-                        Maka akhirnya terbagi dualah Kampung Lebkawangi yang dulunya secara historis yang 
-                        terdapat pada Legenda  “SANGKURIANG KABEURANGAN” adalah bersatu.Menurut Ceritera, 
-                        dulu disana di “ Lebak” ( bagian tempat yang rendah ) terdapat bunga yang sangat harum 
-                        yaitu “ Kembang Jaksi “, yang dipakai tempat bersembunyinya  “DEWI AYU DAYANG SUMBI” dari 
-                        kejaran seorang jejaka bernama Sangkuriang yang sangat mencintainya. Karena Dewi Ayu 
-                        Dayang Sumbi tahu bahwa Sangkuriang itu putranya maka ia lari dari pelukan kekasihnya, 
-                        Sangkuriang.Ia lari dari tempat ia bergandengan ( Pakaleng-kaleng ) yang sekarang disebut 
-                        tempat itu Pangalengan.  Dayang Sumbi lari terus sampai ketempat yang banyak solokan, terpaksa 
-                        Dayang Sumbi ditempat itu loncat-loncat, sehingga tempat itu dinamakan Ciluncat, Dari Ciluncat 
-                        Dayang Sumbi lari lagi sangat cepatnya sehingga sampailah disuatu tempat yang penuh semak 
-                        belukar yang menyebabkan Jari-jari Manisnya berkaitan oleh semak belukar, dan jatuhlah sebuah 
-                        Cingcin dari jari manisnya ditempat itu
-                        <br />
-                        <br />
-                        Maka sejak itu sampai sekarang tempat dimana cingcin itu jatuh di sebut CINGCIN,  tepatnya 
-                        sekarang adalah Kampung Cingcin Kolot Desa Cingcin. Dari Cingcin Kolot Dayang Sumbi berusaha 
-                        menghilangkan jejak berbelok kearah Utara dan terlihat Sangkuriang melesit ke Arah Barat dan 
-                        sampai di suatu tempat dimana ia merasa kehilangan kekasihnya, segera ia berhenti dan ditempat 
-                        yang agak ketinggian ia memandang kebelakang ( Nyoreang Katukang), mengintai kekasihnya dengan 
-                        sudut matanya yang bersinar-sinar memancarkan gelora asmaranya.Maka sejak itu sampai sekarang 
-                        tempat dimana Sangkuriang “ nyoreang “ disebut SOREANG. Dari Soreang terlihat Dayang Sumbi, nun 
-                        disana sedang berjalan bagai “ Macan teu  nangan “ karena letihnya dikejar-kejar Sangkuring.Sangkuriang 
-                        segera balik mengejarnya  dengan penuh harap,  napas ter-eungah eungah. Dewi Ayu Dayang Sumbi  
-                        ke peped di  “ Lebak “ ( tidak ada jalan untuk melarikan diri lagi ).
-                        <br />
-                        <br />
-                        Akhirnya ia memutuskan untuk bersembunyi, kebetulan disana ada Kembang Jaksi yang sedang mekar, maka 
-                        bersembunyilah Dayang Sumbi kedalam bunga itu. Setelah Dayang Sumbi berada didalam kembang Jaksi, maka 
-                        semerbaklah bunga itu mengharumi tempat Lebak. Maka sejak itu sampai sekarang tempat itu disebut 
-                        Lebakwangi,  dimana tempat itu sampai sekarang adalah dinamakan Kampung Lebakwangi Desa Sekarwangi.
-                        <br />
-                        <br />
-                        Demikian sekilas Sejarah Berdirinya Desa Sekarwangi sebagai bukti bahwa berdirinya Desa Sekarwangi 
-                        mempunyai sejarah panjang  dan perlu diketahui oleh semua pihak terutama untuk para Generasi Penerus 
-                        yang menjadi Pemimpin di Desa Sekarwangi, semoga lebih maju dan lebih kreatif dalam membangun daerahnya 
-                        sehingga warga masyarakat Desa Sekarwangi bisa  hidup rukun , damai ( Trentrem /Ayem dan sabilulungan ) 
-                        dalam membangun Negeri. Aamiiin.
-                        <br />
-                        <br />
+                        Berikut daftar nama-nama kepala Desa Sekarwangi sejak tahun 1978 adalah:
                     </p>
+                </div>
+                <div className="overflow-x-auto min-w-[365px]">
+                    <table className="table">
+                        {/* head */}
+                        <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama kepala Desa</th>
+                            <th>Tahun</th>
+                            <th>Keterangan</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {/* row 1 */}
+                        <tr className="hover">
+                            <th>1</th>
+                            <td>M. Isol</td>
+                            <td>1980 - 1985</td>
+                            <td>Kepala Desa Pemekaran</td>
+                        </tr>
+                        {/* row 2 */}
+                        <tr className="hover">
+                            <th>2</th>
+                            <td>Ano Suryono</td>
+                            <td>1986 - 1993</td>
+                            <td>Depinitif</td>
+                        </tr>
+                        {/* row 3 */}
+                        <tr className="hover">
+                            <th>3</th>
+                            <td>E. Junaedi</td>
+                            <td>1993 - 1994</td>
+                            <td>Pjs</td>
+                        </tr>
+                        {/* row 4 */}
+                        <tr className="hover">
+                            <th>4</th>
+                            <td>Eming Hidayat</td>
+                            <td>1994 - 1998</td>
+                            <td>Depinitif</td>
+                        </tr>
+                        {/* row 5 */}
+                        <tr className="hover">
+                            <th>5</th>
+                            <td>E. Junaedi</td>
+                            <td>1998 - 1999</td>
+                            <td>Pjs</td>
+                        </tr>
+                        {/* row 6 */}
+                        <tr className="hover">
+                            <th>6</th>
+                            <td>Didi Suryadi</td>
+                            <td>2000</td>
+                            <td>Pjs</td>
+                        </tr>
+                        {/* row 7 */}
+                        <tr className="hover">
+                            <th>7</th>
+                            <td>Samin Amd</td>
+                            <td>2000 - 2001</td>
+                            <td>Pjs</td>
+                        </tr>
+                        {/* row 8 */}
+                        <tr className="hover">
+                            <th>8</th>
+                            <td>Kusnadi Amd</td>
+                            <td>2001 - 2008</td>
+                            <td>Depinitif</td>
+                        </tr>
+                        {/* row 9 */}
+                        <tr className="hover">
+                            <th>9</th>
+                            <td>Suhandi</td>
+                            <td>2008</td>
+                            <td>Pjs</td>
+                        </tr>
+                        {/* row 10 */}
+                        <tr className="hover">
+                            <th>10</th>
+                            <td>Ano Suryono</td>
+                            <td>2008 - 2014</td>
+                            <td>Depinitif</td>
+                        </tr>
+                        {/* row 11 */}
+                        <tr className="hover">
+                            <th>11</th>
+                            <td>Wadma</td>
+                            <td>2014 - 2015</td>
+                            <td>Pjs</td>
+                        </tr>
+                        {/* row 12 */}
+                        <tr className="hover">
+                            <th>12</th>
+                            <td>Karta</td>
+                            <td>2015 - 2021</td>
+                            <td>Depinitif</td>
+                        </tr>
+                        {/* row 13 */}
+                        <tr className="hover">
+                            <th>13</th>
+                            <td>Karta</td>
+                            <td>2022 - 2029</td>
+                            <td>Depinitif</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
         </main>
