@@ -33,18 +33,26 @@ const Navbar = () => {
                         <li>
                         <details>
                             <summary>Profil</summary>
-                            <ul className="bg-base-100 w-[135px] rounded-t-none p-2 text-black">
-                            <li><Link to="/profil/wilayah-desa">Wilayah Desa</Link></li>
+                            <ul className="bg-base-100 w-[148px] rounded-t-none p-2 text-black">
                             <li><Link to="/profil/sejarah-desa">Sejarah Desa</Link></li>
-                            <li><Link to="/profil/visidanmisi-desa">Visi & Misi</Link></li>
+                            <li><Link to="/profil/wilayah-desa">Wilayah Desa</Link></li>
+                            <li><Link to="/profil/visidanmisi-desa">Visi & Misi Desa</Link></li>
                             </ul>
                         </details>
                         </li>
-                        <li><Link to="/">Lembaga</Link></li>
+                        <li>
+                            <details>
+                                <summary>Pemerintahan</summary>
+                                <ul className="bg-base-100 w-[148px] rounded-t-none p-2 text-black">
+                                <li><Link to="/pemerintahan/sotk">SOTK Desa</Link></li>
+                                <li><Link to="/pemerintahan/bpd">Lembaga BPD</Link></li>
+                                </ul>
+                            </details>
+                        </li>
                         <li>
                         <details>
                             <summary>Data</summary>
-                            <ul className="bg-base-100 w-[175px] rounded-t-none p-2 text-black">
+                            <ul className="bg-base-100 w-[170px] -left-12 rounded-t-none p-2 text-black">
                             <li><Link to="/data/data-penduduk">Data Penduduk</Link></li>
                             <li><Link to="/data/data-agama">Data Agama</Link></li>
                             <li><Link to="/data/data-gender">Data Jenis Kelamin</Link></li>

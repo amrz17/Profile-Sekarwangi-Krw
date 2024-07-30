@@ -53,7 +53,7 @@ const Profil = () => {
                     </p>
                 </div>
                 <div className="overflow-x-auto min-w-[365px]">
-                    <table className="table">
+                    <table className="table text-center">
                         {/* head */}
                         <thead>
                         <tr>
@@ -81,9 +81,9 @@ const Profil = () => {
                         {/* row 3 */}
                         <tr className="hover">
                             <th></th>
-                            <td>Jumlah</td>
+                            <th>Total</th>
                             <td></td>
-                            <td>370,45</td>
+                            <th>370,45</th>
                         </tr>
                         </tbody>
                     </table>

@@ -14,6 +14,8 @@ import DataGenderPage from './pages/DataGenderPage.jsx'
 import DataUmurPage from './pages/DataUmurPage.jsx'
 import DataPekerjaanPage from './pages/DataPekerjaanPage.jsx'
 import VisiDanMisiPage from './pages/VisiDanMisiPage.jsx'
+import StrukturDesaPage from './pages/StrukturDesaPage.jsx'
+import BpdPage from './pages/BpdPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,15 @@ const router = createBrowserRouter([
   {
     path: "/berita-desa/1",
     element: <IsiBerita />
+  },
+  // Pemerintahan
+  {
+    path: "/pemerintahan/sotk",
+    element: <StrukturDesaPage />
+  },
+  {
+    path: "/pemerintahan/bpd",
+    element: <BpdPage />
   },
   // Data Desa
   {

@@ -19,21 +19,30 @@ const DropDownMenu = () => {
          </button>
         </div>
         <ul tabIndex={0} className="dropdown-content menu bg-base-100
-        z-[1] p-2 shadow w-full mt-12">
+        z-[1] p-0 shadow w-full mt-12">
             <li>
                 <div className="flex-none">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-0">
                         <li><Link to="/">Home</Link></li>
                         <li>
                         <details>
                             <summary>Profil</summary>
-                            <ul className="bg-base-100 w-[135px] -right-5 rounded-t-none p-2">
-                            <li><Link to="/profil/wilayah-desa">Wilayah Desa</Link></li>
+                            <ul className="bg-base-100 w-[148px] rounded-t-none p-2 text-black">
                             <li><Link to="/profil/sejarah-desa">Sejarah Desa</Link></li>
+                            <li><Link to="/profil/wilayah-desa">Wilayah Desa</Link></li>
+                            <li><Link to="/profil/visidanmisi-desa">Visi & Misi Desa</Link></li>
                             </ul>
                         </details>
                         </li>
-                        <li><Link to="/berita-desa">Berita</Link></li>
+                        <li>
+                            <details>
+                                <summary>Lembaga</summary>
+                                <ul className="bg-base-100 w-[120px] rounded-t-none p-2 text-black">
+                                <li><Link to="/pemerintahan/sotk">SOTK Desa</Link></li>
+                                <li><Link to="/pemerintahan/bpd">Lembaga BPD</Link></li>
+                                </ul>
+                            </details>
+                        </li>
                         <li>
                         <details>
                             <summary>Data</summary>
