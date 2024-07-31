@@ -3,15 +3,11 @@ import { sekarwangiMap } from "../assets/images/index"
 const Profil = () => {
     return (
         <main className="flex min-h-screen justify-center w-full pt-56 p-3">
-            <section className="flex flex-col md:w-[70%] xl:w-[55%] gap-3">
+            <section className="flex flex-col md:w-[70%] xl:w-[55%] gap-4">
                 <div className="w-full">
-                    <h1 className="text-3xl">
+                    <h1 className="text-3xl text-center">
                         Wilayah Desa
                     </h1>
-                </div>
-                <div className="flex gap-2">
-                    <div className="badge badge-outline">Muhammad Amer</div>
-                    <div className="badge badge-outline">25 Juli 2024</div>
                 </div>
                 <div>
                     <div className="flex justify-center">
@@ -43,6 +39,12 @@ const Profil = () => {
                         Iklim Desa Sekarwangi sebagaimana Desa-Desa lain di wilayah Indonesia mempunyai Iklim 
                         kemarau dan penghujan, hal tersebut  mempunyai pengaruh langsung terhadap pola tanam 
                         yang ada di Desa Sekarwangi	Kecamatan Rawamerta.
+                        <br />
+                        <br />
+                        Desa Sekarwangi terbagi dalam  3  Dusun, 3 RW dan  11 RT,  masing-masing sebagai berikut :
+                        1. Dusun Krajan  terdiri dari RW 01 RT 001 s/d RT 005         
+                        2. Dusun Patengong terdiri dari RW 02 RT. 001 s/d 004
+                        3. Dusun Cilele  terdiri dari RW 03 RT 001 s/d RT 002
                         <br />
                         <br />
                         Luas Desa seluruhnya 370,45 Ha, terdiri dari lahan sawah 288,45 Ha (77,9%) dan tanah 

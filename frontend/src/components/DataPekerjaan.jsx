@@ -40,7 +40,7 @@ const DataPekerjaan = () => {
     return (
         <DataLayout>
             <div className="w-full">
-                <h1 className="text-3xl">
+                <h1 className="text-3xl text-center">
                     Data Pekerjaan
                 </h1>
             </div>
@@ -62,6 +62,13 @@ const DataPekerjaan = () => {
                         <Tooltip />
                         <Legend />
                 </PieChart>
+            </div>
+            <div className="text-justify">
+                <p>
+                    Mata Pencaharian, dengan Kondisi sosial yang berbeda antar dusun yang berada 
+                    di Desa Sekarwangi, memungkinkan mata pencaharian yang ada di Desa Sekarwangi 
+                    sangat beragam, dan berdasarkan karakteristik dusun yang berbeda.
+                </p>
             </div>
             <div className="overflow-x-auto w-[360px] md:w-[580px] xl:w-[850px]">
                 <table className="table text-center">
@@ -294,6 +301,9 @@ const DataPekerjaan = () => {
                     </tr>
                     </tbody>
                 </table>
+                <p className="text-xs">
+                    Sumber : Data BPS tahun 2023
+                </p>
             </div>
         </DataLayout>
     );

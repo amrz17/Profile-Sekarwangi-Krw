@@ -1,26 +1,14 @@
-import { sekarwangiMap } from "../assets/images";
 
 const SejarahDesa = () => {
     return (
         <main className="flex min-h-screen justify-center w-full pt-56 p-3">
             <section className="flex flex-col md:w-[70%] xl:w-[55%] gap-3">
-                <div className="w-full">
+                <div className="w-full text-center">
                     <h1 className="text-3xl">
                         Sejarah Desa
                     </h1>
                 </div>
-                <div className="flex gap-2">
-                    <div className="badge badge-outline">Muhammad Amer</div>
-                    <div className="badge badge-outline">25 Juli 2024</div>
-                </div>
                 <div>
-                    <div className="flex justify-center">
-                        <img 
-                        src={sekarwangiMap}
-                        alt="Map Sekarwangi"
-                        className="my-2"
-                        />
-                    </div>
                     <p className="text-justify">
                         Desa Sekarwangi adalah salah satu Desa dari 13 Desa yang ada di Kecamatan Rawamerta 
                         Kabupaten Karawang. Desa ini merupakan Desa Pemekaran dari Desa Induk yaitu Desa 

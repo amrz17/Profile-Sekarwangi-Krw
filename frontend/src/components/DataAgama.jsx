@@ -9,7 +9,7 @@ const dataAgama = [
   { name: 'Buddha', value: 0 },
 ];
 
-const COLORS = [ '#00C49F','#0088FE', '#FFBB28', '#FF8042'];
+const COLORS = [ '#00C49F','#0088FE', '#FFBB28', '#808080', '#FF8042'];
 
 const DataAgama = () => {
     return (
@@ -37,6 +37,13 @@ const DataAgama = () => {
                         <Tooltip />
                         <Legend />
                 </PieChart>
+            </div>
+            <div className="text-justify">
+                <p>
+                    Dalam perspektif agama, masyarakat di Desa Sekarwangi 
+                    termasuk masyarakat yang homogeny, hal ini di buktikan bahwasanya 
+                    masyarakat Desa Sekarwangi mayoritas beragama Islam. Tingkat kemayoritasan agama Islam di Desa Sekarwangi sangat dipengaruhi oleh Kultur yang sudah lama ada di Desa Sekarwangi, selain itu pegangan agama ini diakibatkan oleh hubungan kekeluargaan dan kekerabatan  yang  ada dari dulu sampai sekarang.
+                </p>
             </div>
             <div className="overflow-x-auto min-w-[360px]">
                 <table className="table text-center">
@@ -94,6 +101,9 @@ const DataAgama = () => {
                     </tr>
                     </tbody>
                 </table>
+                <p className="text-xs">
+                    Sumber : Data BPS tahun 2023
+                </p>
             </div>
         </DataLayout>
 

@@ -24,7 +24,7 @@ const DataUmur = () => {
     return (
         <DataLayout>
             <div className="w-full">
-                <h1 className="text-3xl">
+                <h1 className="text-3xl text-center">
                     Data Rentang Umur
                 </h1>
             </div>
@@ -182,6 +182,9 @@ const DataUmur = () => {
                     </tr>
                     </tbody>
                 </table>
+                <p className="text-xs">
+                    Sumber : Data BPS tahun 2023
+                </p>
             </div>
         </DataLayout>
     );

@@ -21,7 +21,7 @@ const DataPendidikan = () => {
     return (
         <DataLayout>
             <div className="w-full">
-                <h1 className="text-3xl">
+                <h1 className="text-3xl text-center">
                     Data Pendidikan
                 </h1>
             </div>
@@ -43,6 +43,15 @@ const DataPendidikan = () => {
                         <Tooltip />
                         <Legend />
                 </PieChart>
+            </div>
+            <div>
+                <p>
+                    Sektor Pendidikan adalah hal penting dan menjadi indakator suatu 
+                    keberhasilan Desa dan bidang pendidikan menjadi tolak ukur tingkat kesejahteraan 
+                    masyarakat suatu Desa. Dengan pendidikan yang tinggi akan mendongkrak tingkat 
+                    kecakapan seseorang yang dapat mendorong munculnya keterampilan dan kreatifitas 
+                    untuk menjadi lebih berkembang berwirausaha. Jika itu berhasil akan muncul lapangan lapangan pekerjaan yang baru, sehingga masalah pengangguran akan teratasi dengan sendirinya. Dalam era digitalisasi pada saat ini, maka dengan pendidikan yang baik, masyarakat akan lebih mudah untuk menerima informasi informasi yang menunjang untuk lebih berkreatiftas.
+                </p>
             </div>
             <div className="overflow-x-auto min-w-[360px]">
                 <table className="table text-center">
@@ -135,6 +144,9 @@ const DataPendidikan = () => {
                     </tr>
                     </tbody>
                 </table>
+                <p className="text-xs">
+                    Sumber : Data BPS tahun 2023
+                </p>
             </div>
         </DataLayout>
     );

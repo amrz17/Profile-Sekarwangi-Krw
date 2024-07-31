@@ -1,26 +1,14 @@
-import { sekarwangiMap } from "../assets/images/index"
 
 const VisiDanMisi = () => {
     return (
         <main className="flex min-h-screen justify-center w-full pt-56 p-3">
             <section className="flex flex-col md:w-[70%] xl:w-[55%] gap-3">
                 <div className="w-full">
-                    <h1 className="text-3xl">
+                    <h1 className="text-3xl text-center">
                         VIsi & Misi Desa
                     </h1>
                 </div>
-                <div className="flex gap-2">
-                    <div className="badge badge-outline">Muhammad Amer</div>
-                    <div className="badge badge-outline">25 Juli 2024</div>
-                </div>
                 <div>
-                    <div className="flex justify-center">
-                        <img 
-                        src={sekarwangiMap}
-                        alt="Map Sekarwangi"
-                        className="my-2"
-                        />
-                    </div>
                     <h2>Visi</h2>
                     <p className="text-justify">
                         Memperhatikan kondisi pada saat ini dan tantangan yang akan dihadapi selama 5 (lima) 

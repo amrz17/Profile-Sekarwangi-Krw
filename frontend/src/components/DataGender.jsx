@@ -35,6 +35,16 @@ const DataGender = () => {
                         <Legend />
                 </PieChart>
             </div>
+            <div className="text-justify">
+                <p>
+                    Kondisi Demografis/Kependudukan, berdasarkan data BPS (Badan Pusat Statistik)
+                    Kabupaten Karawang pada tahun 2023 jumlah Penduduk Desa Sekarwangi, berjenis 
+                    Kelamin Laki laki = 1.230 Jiwa, berjenis Kelamin Perempuan = 1.206 Jiwa. Data 
+                    ini akan selalu berubah setiap tahun karena pendataan/updating akan dilaksanakan 
+                    setiap 1 (satu) tahun sekali, semua kegiatan ini dilaksanakan oleh seluruh RT/RW 
+                    yang ada di Desa Sekarwangi. Jumlah Penduduk Berdasarkan Jumlah Jenis Kelamin.
+                </p>
+            </div>
             <div className="overflow-x-auto min-w-[360px]">
                 <table className="table text-center">
                     {/* head */}
@@ -70,6 +80,9 @@ const DataGender = () => {
                     </tr>
                     </tbody>
                 </table>
+                <p className="text-xs">
+                    Sumber : Data BPS tahun 2023
+                </p>
             </div>
         </DataLayout>
 
