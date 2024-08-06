@@ -1,44 +1,89 @@
+import { kades, kaduskrajan, kasikesejahteraan, kasipelayanan, kasipem, kaurkeuangan, kaurumum, sekre } from "../assets/images";
 
 const StrukturDesa = () => {
     return (
         <main className="flex min-h-screen justify-center w-full pt-56 p-3">
-            <section className="flex flex-col md:w-[70%] xl:w-[55%] gap-3">
+            <section className="flex flex-col md:w-[70%] xl:w-[55%] gap-3
+            justify-center items-center">
                 <div className="w-full">
-                    <h1 className="text-3xl text-center">
-                        Perangkat Desa
+                    <h1 className="font-inter text-3xl mb-2 font-bold text-center
+                    text-gray-500">
+                        PERANGKAT DESA 
                     </h1>
                 </div>
-                <div className="carousel w-full">
-                    <div id="item1" className="carousel-item flex flex-col w-full">
+                <div className="carousel w-[90%] md:w-[30rem] xl:w-[30rem] rounded-lg">
+                    <div id="slide1" className="carousel-item relative w-full">
                         <img
-                        src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-                        className="w-[360px] h-[320px] xl:w-[500px] xl:h-[500px] mx-auto" />
-                        <h2 className="text-center">Kepala Desa</h2>
+                            src={kades}
+                            className="w-full" />
+                        <div className="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide8" className="btn btn-ghost text-base-200 text-xl">❮</a>
+                            <a href="#slide2" className="btn btn-ghost text-base-200 text-xl">❯</a>
                     </div>
-                    <div id="item2" className="carousel-item flex flex-col w-full">
+                    </div>
+                        <div id="slide2" className="carousel-item relative w-full">
                         <img
-                        src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-                        className="w-[360px] h-[320px] xl:w-[500px] xl:h-[500px] mx-auto" />
-                        <h2 className="text-center">Kepala Desa</h2>
+                            src={sekre}
+                            className="w-full" />
+                        <div className="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" className="btn btn-ghost text-base-200 text-xl">❮</a>
+                            <a href="#slide3" className="btn btn-ghost text-base-200 text-xl">❯</a>
+                        </div>
                     </div>
-                    <div id="item3" className="carousel-item flex flex-col w-full">
+                    <div id="slide3" className="carousel-item relative w-full">
                         <img
-                        src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-                        className="w-[360px] h-[320px] xl:w-[500px] xl:h-[500px] mx-auto" />
-                        <h2 className="text-center">Kepala Desa</h2>
+                            src={kaurkeuangan}
+                            className="w-full" />
+                        <div className="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide2" className="btn btn-ghost text-base-200 text-xl">❮</a>
+                            <a href="#slide4" className="btn btn-ghost text-base-200 text-xl">❯</a>
+                        </div>
                     </div>
-                    <div id="item4" className="carousel-item flex flex-col w-full">
+                    <div id="slide4" className="carousel-item relative w-full">
                         <img
-                        src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-                        className="w-[360px] h-[320px] xl:w-[500px] xl:h-[500px] mx-auto" />
-                        <h2 className="text-center">Kepala Desa</h2>
+                            src={kaurumum}
+                            className="w-full" />
+                        <div className="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide3" className="btn btn-ghost text-base-200 text-xl">❮</a>
+                            <a href="#slide5" className="btn btn-ghost text-base-200 text-xl">❯</a>
+                        </div>
                     </div>
-                </div>
-                <div className="flex w-full justify-center gap-2 py-2">
-                <a href="#item1" className="btn btn-xs">1</a>
-                <a href="#item2" className="btn btn-xs">2</a>
-                <a href="#item3" className="btn btn-xs">3</a>
-                <a href="#item4" className="btn btn-xs">4</a>
+                    <div id="slide5" className="carousel-item relative w-full">
+                        <img
+                            src={kasipem}
+                            className="w-full" />
+                        <div className="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide4" className="btn btn-ghost text-base-200 text-xl">❮</a>
+                            <a href="#slide6" className="btn btn-ghost text-base-200 text-xl">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide6" className="carousel-item relative w-full">
+                        <img
+                            src={kasipelayanan}
+                            className="w-full" />
+                        <div className="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide5" className="btn btn-ghost text-base-200 text-xl">❮</a>
+                            <a href="#slide7" className="btn btn-ghost text-base-200 text-xl">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide7" className="carousel-item relative w-full">
+                        <img
+                            src={kasikesejahteraan}
+                            className="w-full" />
+                        <div className="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide6" className="btn btn-ghost text-base-200 text-xl">❮</a>
+                            <a href="#slide8" className="btn btn-ghost text-base-200 text-xl">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide8" className="carousel-item relative w-full">
+                        <img
+                            src={kaduskrajan}
+                            className="w-full" />
+                        <div className="absolute left-2 right-2 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide7" className="btn btn-ghost text-base-200 text-xl">❮</a>
+                            <a href="#slide1" className="btn btn-ghost text-base-200 text-xl">❯</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

@@ -1,27 +1,25 @@
 import { Link } from "react-router-dom";
 
+
 const DropDownMenu = () => {
     return (
     <div className="dropdown bg-green-600 w-full flex justify-center">
         <div tabIndex={0} role="button" className="btn-wide flex justify-center">
-         <button className="btn btn-square btn-ghost text-white">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block h-5 w-5 stroke-current">
-                <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-         </button>
+            <label className="btn btn-ghost text-white">
+                <svg
+                        className="swap-off fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 512 512">
+                        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                </svg>
+            </label>
         </div>
         <ul tabIndex={0} className="dropdown-content menu bg-base-100
         z-[1] p-0 shadow w-full mt-12">
             <li>
-                <div className="flex-none">
+                <div className="flex-none mx-auto">
                     <ul className="menu menu-horizontal px-0">
                         <li><Link to="/">Home</Link></li>
                         <li>
@@ -46,8 +44,7 @@ const DropDownMenu = () => {
                         <li>
                         <details>
                             <summary>Data</summary>
-                            <ul className="bg-base-100 w-[170px] -left-12 rounded-t-none p-2">
-                            <li><Link to="/data/data-penduduk">Data Penduduk</Link></li>
+                            <ul className="bg-base-100 w-[170px] -left-14 rounded-t-none p-2">
                             <li><Link to="/data/data-agama">Data Agama</Link></li>
                             <li><Link to="/data/data-gender">Data Jenis Kelamin</Link></li>
                             <li><Link to="/data/data-umur">Data Rentang Umur</Link></li>

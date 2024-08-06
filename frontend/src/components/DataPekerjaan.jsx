@@ -1,47 +1,27 @@
 import DataLayout from "../layout/DataLayout"
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
+import { dataPekerjaan, COLORS } from "../const";
 
-const dataPekerjaan = [
-    { name: "Tidak/Belum Bekerja", value: 56},
-    { name: "Mengurus Rumah Tangga", value: 450},
-    { name: "Pelajar/Mahasiswa", value: 492},
-    { name: "Pensiunan", value: 2},
-    { name: "PNS", value: 0},
-    { name: "Polri", value: 2},
-    { name: "Perdagangan", value: 6},
-    { name: "Petani/Perkebunan", value: 94},
-    { name: "Industri", value: 0},
-    { name: "Konstruksa", value: 0},
-    { name: "Karyawan Swasta", value: 68},
-    { name: "Karyawan BUMN", value: 0},
-    { name: "Karyawan Honorer", value: 6},
-    { name: "Buruh Harian Lepas", value: 53},
-    { name: "Buruh Tani/Perkebunan", value: 50},
-    { name: "Asisten Rumah Tangga", value: 8},
-    { name: "Tukang Batu", value: 4},
-    { name: "Tukang Kayu", value: 4},
-    { name: "Tukang Las", value: 3},
-    { name: "Tukang Jahit", value: 32},
-    { name: "Mekanik", value: 3},
-    { name: "Juru Masak", value: 10},
-    { name: "Dosen", value: 0},
-    { name: "Guru", value: 15},
-    { name: "Bidan", value: 3},
-    { name: "Perawat", value: 1},
-    { name: "Sopir", value: 18},
-    { name: "Pedagang", value: 70},
-    { name: "Perangkat Desa", value: 10},
-    { name: "Wiraswasta", value: 8},
-]
+const RADIAN = Math.PI / 180;
+const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.25;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
-const COLORS = [ '#0088FE', '#FF1493' ];
+  return (
+    <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+      {`${(percent * 100).toFixed(0)}%`}
+    </text>
+  );
+};
 
 const DataPekerjaan = () => {
     return (
         <DataLayout>
             <div className="w-full">
-                <h1 className="text-3xl text-center">
-                    Data Pekerjaan
+                <h1 className="font-inter text-3xl font-bold text-center
+                    text-gray-500">
+                    DATA PEKERJAAN
                 </h1>
             </div>
             <div className="mx-auto">
@@ -51,9 +31,10 @@ const DataPekerjaan = () => {
                             cx="50%"
                             cy="50%"
                             labelLine={false}
-                            outerRadius={80}
+                            outerRadius={100}
                             fill="#8884d8"
                             dataKey="value"
+                            label={renderCustomizedLabel}
                         >
                             {dataPekerjaan.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -65,12 +46,21 @@ const DataPekerjaan = () => {
             </div>
             <div className="text-justify">
                 <p>
-                    Mata Pencaharian, dengan Kondisi sosial yang berbeda antar dusun yang berada 
+                    Data demografi berdasarkan mata pencaharian menggambarkan distribusi pekerjaan 
+                    dalam suatu populasi, memberikan wawasan penting tentang struktur ekonomi dan 
+                    sosial masyarakat. Analisis ini dapat mengungkapkan tren ekonomi yang sedang berlangsung, seperti pergeseran
+                    dari ekonomi berbasis pertanian ke industri atau jasa. Selain itu, data ini juga mencerminkan
+                    tingkat pendidikan dan keterampilan tenaga kerja, serta dapat menunjukkan kesenjangan atau
+                    ketimpangan dalam akses terhadap peluang ekonomi. Dengan Kondisi sosial yang berbeda antar dusun yang berada 
                     di Desa Sekarwangi, memungkinkan mata pencaharian yang ada di Desa Sekarwangi 
                     sangat beragam, dan berdasarkan karakteristik dusun yang berbeda.
                 </p>
             </div>
-            <div className="overflow-x-auto w-[360px] md:w-[580px] xl:w-[850px]">
+            <h2 className="text-center font-inter text-gray-500 font-bold my-2
+            md:text-xl">
+                JUMLAH PENDUDUK BERDASARKAN MATA PENCAHARIAN
+            </h2>
+            <div className="overflow-x-auto w-[360px] md:w-[580px] xl:w-full mx-auto">
                 <table className="table text-center">
                     {/* head */}
                     <thead>

@@ -1,141 +1,71 @@
+import { daftarKaDes } from "../const";
 
 const SejarahDesa = () => {
     return (
         <main className="flex min-h-screen justify-center w-full pt-56 p-3">
-            <section className="flex flex-col md:w-[70%] xl:w-[55%] gap-3">
-                <div className="w-full text-center">
-                    <h1 className="text-3xl">
+            <section className="flex flex-col md:w-[70%] xl:w-[55%] gap-3
+            mb-8">
+                <div className="w-full mb-1">
+                    <h1 className="font-inter text-3xl mb-2 font-bold">
                         Sejarah Desa
                     </h1>
+                    <p className="text-sm text-base-300">
+                        Muhammad Amer | {" "}
+                        <span>
+                            Senin 5 Agustus 2024
+                        </span> 
+                    </p>
                 </div>
-                <div>
-                    <p className="text-justify">
+                <div className="font-inter text-justify">
+                    <p>
                         Desa Sekarwangi adalah salah satu Desa dari 13 Desa yang ada di Kecamatan Rawamerta 
                         Kabupaten Karawang. Desa ini merupakan Desa Pemekaran dari Desa Induk yaitu Desa 
                         Rawagede, yang sekarang menjadi Desa Balongsari. Pada tahun 1976 Desa Induk Rawagede
-                        dimekarkan menjadi Dua Desa yaitu Desa Rawagede dan Desa Mekarjaya dan selanjutnya 
+                        dimekarkan menjadi dua Desa yaitu Desa Rawagede dan Desa Mekarjaya dan selanjutnya 
                         Desa Rawagede pun diganti menjadi Desa Balongsari. Pada Tahun 1978 Desa Balongsari 
                         kembali dimekarkan lagi menjadi dua Desa yaitu Desa Balongsari dan Desa Sekarwangi, 
                         disinilah mulai terbentuk Desa Sekarwangi. 
                         <br />
                         <br />
-                        Mengapa Desa Pemekaran dinamakan Desa Sekarwang ? Menurut Tokoh Masyarakat disini yang
-                        kebetulan sekarang menjadi Kepala Desa Sekarwangi, Ia menceritakan : Sekar artinya Kembang/Bunga
-                        Wangi artinya Harum. Jadi Sekarwangi adalah sebuah Desa yang berkembang diumpamakan 
-                        seperti bunga / Kembang yang sedang Mekar sehingga mengeluarkan wangi yang sedap arti 
-                        lain yaitu Desa yang selalu ingin membangun baik Fisik maupun sumberdaya manusianya sehingga 
-                        bisa mengharumkan nama Desa Sekarwangi itu sendiri.
-                        Jadi tahun 1978 merupakan Tahun Kelahiran/Berdirinya Desa Sekarwangi sekarang.
+                        Mengapa Desa Pemekaran dinamakan Desa Sekarwangi ? Menurut tokoh masyarakat disini yang
+                        sekarang menjadi Kepala Desa Sekarwangi, Ia menceritakan, Sekar artinya kembang(Bunga)
+                        wangi artinya harum. Jadi Sekarwangi adalah sebuah Desa yang berkembang diumpamakan 
+                        seperti bunga/kembang yang sedang mekar sehingga mengeluarkan wangi yang sedap. Arti 
+                        lain nama Desa Sekarwangi yaitu Desa yang selalu ingin membangun baik Fisik maupun 
+                        sumberdaya manusianya sehingga bisa mengharumkan nama Desa Sekarwangi itu sendiri. 
+                        Jadi tahun 1978 merupakan tahun kelahiran/berdirinya Desa Sekarwangi sekarang.
                         <br />
                         <br />
-                        Berikut daftar nama-nama kepala Desa Sekarwangi sejak tahun 1978 adalah:
+                    </p>
+                    <p className="xl:text-center">
+                        Berikut daftar nama-nama kepala Desa Sekarwangi sejak tahun 1978 adalah :
                     </p>
                 </div>
-                <div className="overflow-x-auto min-w-[365px]">
-                    <table className="table text-center">
-                        {/* head */}
-                        <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Nama kepala Desa</th>
-                            <th>Tahun</th>
-                            <th>Keterangan</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {/* row 1 */}
-                        <tr className="hover">
-                            <th>1.</th>
-                            <td>M. Isol</td>
-                            <td>1980 - 1985</td>
-                            <td>Kepala Desa Pemekaran</td>
-                        </tr>
-                        {/* row 2 */}
-                        <tr className="hover">
-                            <th>2.</th>
-                            <td>Ano Suryono</td>
-                            <td>1986 - 1993</td>
-                            <td>Depinitif</td>
-                        </tr>
-                        {/* row 3 */}
-                        <tr className="hover">
-                            <th>3.</th>
-                            <td>E. Junaedi</td>
-                            <td>1993 - 1994</td>
-                            <td>Pjs</td>
-                        </tr>
-                        {/* row 4 */}
-                        <tr className="hover">
-                            <th>4.</th>
-                            <td>Eming Hidayat</td>
-                            <td>1994 - 1998</td>
-                            <td>Depinitif</td>
-                        </tr>
-                        {/* row 5 */}
-                        <tr className="hover">
-                            <th>5.</th>
-                            <td>E. Junaedi</td>
-                            <td>1998 - 1999</td>
-                            <td>Pjs</td>
-                        </tr>
-                        {/* row 6 */}
-                        <tr className="hover">
-                            <th>6.</th>
-                            <td>Didi Suryadi</td>
-                            <td>2000</td>
-                            <td>Pjs</td>
-                        </tr>
-                        {/* row 7 */}
-                        <tr className="hover">
-                            <th>7.</th>
-                            <td>Samin Amd</td>
-                            <td>2000 - 2001</td>
-                            <td>Pjs</td>
-                        </tr>
-                        {/* row 8 */}
-                        <tr className="hover">
-                            <th>8.</th>
-                            <td>Kusnadi Amd</td>
-                            <td>2001 - 2008</td>
-                            <td>Depinitif</td>
-                        </tr>
-                        {/* row 9 */}
-                        <tr className="hover">
-                            <th>9.</th>
-                            <td>Suhandi</td>
-                            <td>2008</td>
-                            <td>Pjs</td>
-                        </tr>
-                        {/* row 10 */}
-                        <tr className="hover">
-                            <th>10.</th>
-                            <td>Ano Suryono</td>
-                            <td>2008 - 2014</td>
-                            <td>Depinitif</td>
-                        </tr>
-                        {/* row 11 */}
-                        <tr className="hover">
-                            <th>11.</th>
-                            <td>Wadma</td>
-                            <td>2014 - 2015</td>
-                            <td>Pjs</td>
-                        </tr>
-                        {/* row 12 */}
-                        <tr className="hover">
-                            <th>12.</th>
-                            <td>Karta</td>
-                            <td>2015 - 2021</td>
-                            <td>Depinitif</td>
-                        </tr>
-                        {/* row 13 */}
-                        <tr className="hover">
-                            <th>13.</th>
-                            <td>Karta</td>
-                            <td>2022 - 2029</td>
-                            <td>Depinitif</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div>
+                    <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                    {daftarKaDes.map((kades, index) => (
+                        <li key={index}>
+                            <div className="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                className="h-5 w-5">
+                                <path
+                                fillRule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                clipRule="evenodd" />
+                            </svg>
+                            </div>
+                            <div className="timeline-start mb-10 md:text-end">
+                            <time className="font-mono italic">{ kades.tahun }</time>
+                            <div className="text-lg font-black">{ kades.nama }</div>
+                                { kades.ket }
+                            </div>
+                            <hr />
+                        </li>
+                    ))}
+                    </ul>
                 </div>
             </section>
         </main>

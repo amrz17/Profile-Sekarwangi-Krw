@@ -1,22 +1,28 @@
 import DataLayout from "../layout/DataLayout";
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
+import { dataAgama, COLORS } from "../const"
 
-const dataAgama = [
-  { name: 'Islam', value: 2434 },
-  { name: 'Khatolik', value: 0 },
-  { name: 'Kristen', value: 2 },
-  { name: 'Hindu', value: 0 },
-  { name: 'Buddha', value: 0 },
-];
 
-const COLORS = [ '#00C49F','#0088FE', '#FFBB28', '#808080', '#FF8042'];
+const RADIAN = Math.PI / 180;
+const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.25;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+  return (
+    <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+      {`${(percent * 100).toFixed(0)}%`}
+    </text>
+  );
+};
 
 const DataAgama = () => {
     return (
         <DataLayout>
             <div className="w-full">
-                <h1 className="text-3xl text-center">
-                    Data Agama
+                <h1 className="font-inter text-3xl font-bold text-center
+                    text-gray-500">
+                    DATA AGAMA
                 </h1>
             </div>
             <div className="mx-auto">
@@ -26,9 +32,11 @@ const DataAgama = () => {
                             cx="50%"
                             cy="50%"
                             labelLine={false}
-                            outerRadius={80}
+                            outerRadius={120}
                             fill="#8884d8"
                             dataKey="value"
+                            label={renderCustomizedLabel}
+
                         >
                             {dataAgama.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -45,8 +53,13 @@ const DataAgama = () => {
                     masyarakat Desa Sekarwangi mayoritas beragama Islam. Tingkat kemayoritasan agama Islam di Desa Sekarwangi sangat dipengaruhi oleh Kultur yang sudah lama ada di Desa Sekarwangi, selain itu pegangan agama ini diakibatkan oleh hubungan kekeluargaan dan kekerabatan  yang  ada dari dulu sampai sekarang.
                 </p>
             </div>
-            <div className="overflow-x-auto min-w-[360px]">
+            <h2 className="text-center font-inter text-gray-500 font-bold my-2
+            md:text-xl">
+                JUMLAH PENDUDUK BERDASARKAN AGAMA
+            </h2>
+            <div className="overflow-x-auto w-full mx-auto">
                 <table className="table text-center">
+
                     {/* head */}
                     <thead>
                     <tr>

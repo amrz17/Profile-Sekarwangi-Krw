@@ -1,28 +1,27 @@
 import DataLayout from "../layout/DataLayout";
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
+import { dataPendidikan, COLORS } from "../const";
 
-const dataPendidikan = [
-    { name: "Tidak/Belum Sekolah", value: 254 },
-    { name: "Belum Tamat SD/Sederajat", value: 304 },
-    { name: "Tamat SD/Sederajat", value: 1600 },
-    { name: "SLTP/Sederajat", value: 176 },
-    { name: "SLTA/Sederajat", value: 85 },
-    { name: "D-1/D-2", value: 1 },
-    { name: "Akademi/D-3/S.Muda", value: 1 },
-    { name: "S-1/D-4", value: 14 },
-    { name: "S2", value: 1 },
-    { name: "S3", value: 0 },
+const RADIAN = Math.PI / 180;
+const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
-]
-
-const COLORS = [ '#0088FE', '#FF1493' ];
+  return (
+    <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+      {`${(percent * 100).toFixed(0)}%`}
+    </text>
+  );
+};
 
 const DataPendidikan = () => {
     return (
         <DataLayout>
             <div className="w-full">
-                <h1 className="text-3xl text-center">
-                    Data Pendidikan
+                <h1 className="font-inter text-3xl font-bold text-center
+                    text-gray-500">
+                    DATA PENDIDIKAN
                 </h1>
             </div>
             <div className="mx-auto">
@@ -32,9 +31,10 @@ const DataPendidikan = () => {
                             cx="50%"
                             cy="50%"
                             labelLine={false}
-                            outerRadius={80}
+                            outerRadius={100}
                             fill="#8884d8"
                             dataKey="value"
+                            label={renderCustomizedLabel}
                         >
                             {dataPendidikan.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -44,15 +44,23 @@ const DataPendidikan = () => {
                         <Legend />
                 </PieChart>
             </div>
-            <div>
+            <div className="font-inter text-justify">
                 <p>
-                    Sektor Pendidikan adalah hal penting dan menjadi indakator suatu 
+                    Sektor pendidikan adalah hal penting dan menjadi indakator suatu 
                     keberhasilan Desa dan bidang pendidikan menjadi tolak ukur tingkat kesejahteraan 
                     masyarakat suatu Desa. Dengan pendidikan yang tinggi akan mendongkrak tingkat 
                     kecakapan seseorang yang dapat mendorong munculnya keterampilan dan kreatifitas 
-                    untuk menjadi lebih berkembang berwirausaha. Jika itu berhasil akan muncul lapangan lapangan pekerjaan yang baru, sehingga masalah pengangguran akan teratasi dengan sendirinya. Dalam era digitalisasi pada saat ini, maka dengan pendidikan yang baik, masyarakat akan lebih mudah untuk menerima informasi informasi yang menunjang untuk lebih berkreatiftas.
+                    untuk menjadi lebih berkembang berwirausaha. Jika itu berhasil akan muncul lapangan
+                    lapangan pekerjaan yang baru, sehingga masalah pengangguran akan teratasi dengan 
+                    sendirinya. Dalam era digitalisasi pada saat ini, maka dengan pendidikan yang baik,
+                    masyarakat akan lebih mudah untuk menerima informasi informasi yang menunjang untuk 
+                    lebih berkreatiftas.
                 </p>
             </div>
+            <h2 className="text-center font-inter text-gray-500 font-bold my-2
+            md:text-xl">
+                JUMLAH PENDUDUK BERDASARKAN TINGKAT PENDIDIKAN
+            </h2>
             <div className="overflow-x-auto min-w-[360px]">
                 <table className="table text-center">
                     {/* head */}

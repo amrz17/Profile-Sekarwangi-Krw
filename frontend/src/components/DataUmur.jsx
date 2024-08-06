@@ -1,31 +1,27 @@
 import DataLayout from "../layout/DataLayout"
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
+import { dataUmur, COLORS } from "../const";
 
-const dataUmur = [
-  { name: '0 s/d 5', value: 165 },
-  { name: '6 s/d11', value: 171 },
-  { name: '12 s/d 17', value: 161 },
-  { name: '18 s/d 23', value: 259 },
-  { name: '24 s/d 29', value: 222 },
-  { name: '30 s/d 35', value: 256 },
-  { name: '36 s/d 40', value: 226 },
-  { name: '41 s/d 45', value: 244 },
-  { name: '46 s/d 50', value: 196 },
-  { name: '51 s/d 55', value: 187 },
-  { name: '56 s/d 60', value: 198 },
-  { name: '61 >', value: 166 },
-];
+const RADIAN = Math.PI / 180;
+const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.7;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
-const COLORS = [ '#FF5733 ', '#33FF57', '#3357FF', '#FF33A6',
-    '#33FFA6', '#A633FF', '#FF8C33', '#8CFF33', '#338CFF', '#FF3380',
-    '#33FF80', '#8033FF' ];
+  return (
+    <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+      {`${(percent * 100).toFixed(0)}%`}
+    </text>
+  );
+};
 
 const DataUmur = () => {
     return (
         <DataLayout>
             <div className="w-full">
-                <h1 className="text-3xl text-center">
-                    Data Rentang Umur
+                <h1 className="font-inter text-3xl font-bold text-center
+                    text-gray-500">
+                    DATA RENTANG UMUR
                 </h1>
             </div>
             <div className="mx-auto">
@@ -37,9 +33,9 @@ const DataUmur = () => {
                             cx="50%"
                             cy="50%"
                             labelLine={false}
-                            outerRadius={80}
+                            outerRadius={130}
                             fill="#8884d8"
-                            label
+                            label={renderCustomizedLabel}
                         >
                             {dataUmur.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -49,7 +45,25 @@ const DataUmur = () => {
                         <Legend />
                 </PieChart>
             </div>
-            <div className="overflow-x-auto w-[360px] md:w-[580px] xl:w-[850px]">
+            <div>
+                <p className="font-inter text-justify">
+                    Data demografi berdasarkan rentang umur memberikan gambaran penting tentang 
+                    komposisi populasi suatu wilayah. Umumnya, rentang umur dibagi menjadi beberapa 
+                    kategori utama: anak-anak (0-14 tahun), remaja (15-24 tahun), dewasa muda (25-44 tahun), 
+                    dewasa paruh baya (45-64 tahun), dan lansia (65 tahun ke atas). Distribusi penduduk 
+                    di berbagai kelompok umur ini dapat mempengaruhi berbagai aspek sosial, ekonomi, dan kebijakan publik.
+                    Misalnya, wilayah dengan proporsi anak-anak dan remaja yang tinggi mungkin perlu fokus pada
+                    pengembangan sistem pendidikan dan lapangan kerja, sementara daerah dengan populasi lansia
+                    yang besar memerlukan perencanaan layanan kesehatan dan sistem pensiun yang memadai. 
+                    Analisis tren demografi berdasarkan umur juga dapat membantu dalam memproyeksikan kebutuhan
+                    masa depan dan merancang kebijakan yang tepat sasaran untuk setiap kelompok usia.
+                </p>
+            </div>
+            <h2 className="text-center font-inter text-gray-500 font-bold my-2
+            md:text-xl">
+                    JUMLAH PENDUDUK BERDASARKAN STRUKTUR USIA
+            </h2>
+            <div className="overflow-x-auto w-full mx-auto">
                 <table className="table text-center">
                     {/* head */}
                     <thead>
