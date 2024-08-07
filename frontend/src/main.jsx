@@ -17,50 +17,50 @@ import BpdPage from './pages/BpdPage.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />
+    element: <HomePage />,
   },
   // Profil Desa
   {
     path: "/profil/wilayah-desa",
-    element: <ProfilPage />
+    element: <ProfilPage />,
   },
   {
     path: "/profil/sejarah-desa",
-    element: <SejarahPage />
+    element: <SejarahPage />,
   },
   {
     path: "/profil/visidanmisi-desa",
-    element: <VisiDanMisiPage />
+    element: <VisiDanMisiPage />,
   },
   // Pemerintahan
   {
     path: "/pemerintahan/sotk",
-    element: <StrukturDesaPage />
+    element: <StrukturDesaPage />,
   },
   {
     path: "/pemerintahan/bpd",
-    element: <BpdPage />
+    element: <BpdPage />,
   },
   // Data Desa
   {
     path: "/data/data-agama",
-    element: <DataAgamaPage />
+    element: <DataAgamaPage />,
   },
   {
     path: "/data/data-gender",
-    element: <DataGenderPage />
+    element: <DataGenderPage />,
   },
   {
     path: "/data/data-umur",
-    element: <DataUmurPage />
+    element: <DataUmurPage />,
   },
   {
     path: "/data/data-pendidikan",
-    element: <DataPendidikanPage />
+    element: <DataPendidikanPage />,
   },
   {
     path: "/data/data-pekerjaan",
-    element: <DataPekerjaanPage />
+    element: <DataPekerjaanPage />,
   }
 ]);
 
