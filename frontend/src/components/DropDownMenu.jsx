@@ -36,7 +36,7 @@ const DropDownMenu = () => {
                             <details>
                                 <summary>Lembaga</summary>
                                 <ul className="bg-base-100 w-[120px] rounded-t-none p-2 text-black">
-                                <li><Link to="/pemerintahan/sotk">SOTK Desa</Link></li>
+                                <li><Link to="/pemerintahan/sotk">Perangkat Desa</Link></li>
                                 <li><Link to="/pemerintahan/bpd">Lembaga BPD</Link></li>
                                 </ul>
                             </details>

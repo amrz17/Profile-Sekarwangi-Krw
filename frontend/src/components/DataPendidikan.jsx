@@ -152,10 +152,10 @@ const DataPendidikan = () => {
                     </tr>
                     </tbody>
                 </table>
-                <p className="text-xs">
-                    Sumber : Data BPS tahun 2023
-                </p>
             </div>
+            <p className="text-xs">
+                Sumber : Data BPS tahun 2023
+            </p>
         </DataLayout>
     );
 };
